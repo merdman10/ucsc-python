@@ -65,6 +65,7 @@ def string_len(s1 = "apples"):
     result = len(s1) #finds the length of s1
 
     print("String: {} Length: {}".format(s1, result))
+    return result
 
 #test code
 string_len("1")
@@ -75,3 +76,24 @@ string_len()
 #run code
 ret = string_len("watermelon")
 print("Function worked?", len("watermelon") == ret)
+
+
+#Problem 4
+def mult_two(a=10, b=11):
+    '''
+    Takes default arguments a = 10, b = 11. The function checks if a is a multiple of b.
+    '''
+
+    if b % a ==0:
+        print("{} is a multiple of {}".format(a,b))
+    else:
+        print("{} is NOT a multiple of {}".format(a,b))
+
+#test code
+mult_two() #uses default values
+mult_two(10,15)
+mult_two(a = 21, b = 7)
+
+#run code
+mult_two(b=7, a=21) #21 is still not a multiple of 7
+mult_two(7,21)      #but, 7 is a multiple of 21
