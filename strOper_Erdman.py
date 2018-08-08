@@ -11,14 +11,11 @@ print(w1)
 w2 = w[0:4].upper()+w[4:]
 print(w2)
 
-#for i,j in enumerate(w):
-#    if i < 4:
-#        print(j.upper())
-        
-        
-#    else:
-#        continue
-        #w2.append()
+#trying a different way to print EQUAtion :)
+c = bytearray()
+for i,j in enumerate(w):
+    c.append(ord(j.upper() if i < 4 else j))
+print(c.decode())
 
 #2. t = "programming is fun". Slice t into three parts.
 #Then do the required to get the following:
