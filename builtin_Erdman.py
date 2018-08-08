@@ -20,7 +20,7 @@ import datetime, random
 d = datetime.datetime.now().date()
 random.seed(d)
 for i in range(10):
-    w = random.random
+    w = random.random()
     print("Iteration", i, "Date =", w)
 
 #4. Use time.clock() to find the time before and time after the for-loop that loops through range(1000) and appends the value to a list called list1. Print the time taken for the loop.
